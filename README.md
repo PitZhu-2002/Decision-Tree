@@ -1,2 +1,1 @@
-# Decision-Tree
-Tree classifier
+# Ensemble Learning

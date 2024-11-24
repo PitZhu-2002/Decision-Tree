@@ -1,12 +1,10 @@
 import math
 from copy import copy
-
 import numpy as np
 import pandas as pd
 from sklearn import tree
 from sklearn.model_selection import train_test_split
 
-pd.set_option('display.max_rows', None)
 
 class DT:
     def __init__(self, type = 'entropy', container = []):
@@ -23,10 +21,6 @@ class DT:
             p = value / len(y)
             e = e - p * math.log2(p)
         return e
-
-    def gini(self,y):
-        # 计算 gini 系数
-        pass
 
     def compute(self,y , H):    # 计算划分标准如 信息增益
         H_c = copy(H)
